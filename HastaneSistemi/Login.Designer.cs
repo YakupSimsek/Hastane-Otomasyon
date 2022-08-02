@@ -57,7 +57,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(79)))), ((int)(((byte)(107)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(56)))), ((int)(((byte)(121)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -70,24 +70,25 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(193)))), ((int)(((byte)(201)))));
-            this.label3.Location = new System.Drawing.Point(42, 252);
+            this.label3.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
+            this.label3.Location = new System.Drawing.Point(26, 251);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 37);
+            this.label3.Size = new System.Drawing.Size(233, 36);
             this.label3.TabIndex = 2;
             this.label3.Text = "Hastanemize";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(193)))), ((int)(((byte)(201)))));
-            this.label1.Location = new System.Drawing.Point(52, 289);
+            this.label1.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
+            this.label1.Location = new System.Drawing.Point(36, 288);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 37);
+            this.label1.Size = new System.Drawing.Size(220, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hoş geldiniz";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -125,11 +126,11 @@
             // 
             // btngiris
             // 
-            this.btngiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(193)))), ((int)(((byte)(201)))));
+            this.btngiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
             this.btngiris.FlatAppearance.BorderSize = 0;
             this.btngiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngiris.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btngiris.ForeColor = System.Drawing.Color.White;
+            this.btngiris.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(227)))), ((int)(((byte)(210)))));
             this.btngiris.Location = new System.Drawing.Point(12, 374);
             this.btngiris.Name = "btngiris";
             this.btngiris.Size = new System.Drawing.Size(145, 47);
@@ -234,11 +235,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(193)))), ((int)(((byte)(201)))));
+            this.label2.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
             this.label2.Location = new System.Drawing.Point(17, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 37);
+            this.label2.Size = new System.Drawing.Size(276, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "Hesabınızı giriniz";
             // 
@@ -248,7 +249,7 @@
             this.btnkapat.FlatAppearance.BorderSize = 0;
             this.btnkapat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnkapat.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnkapat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.btnkapat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(227)))), ((int)(((byte)(210)))));
             this.btnkapat.Location = new System.Drawing.Point(660, 0);
             this.btnkapat.Name = "btnkapat";
             this.btnkapat.Size = new System.Drawing.Size(40, 40);
@@ -259,6 +260,7 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btngiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 550);

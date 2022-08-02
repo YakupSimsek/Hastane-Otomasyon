@@ -109,14 +109,20 @@ namespace HastaneSistemi
                 sda.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    string rol = dt.Rows[0][5].ToString();
+                    string rol = dt.Rows[0][6].ToString();
                     if (rol == "doktor")
                     {
-                        MessageBox.Show("doktor");
+                        Menüler fr = new Menüler();
+                        fr.Show();
+                        this.Hide();
+
+
                     }
                     else if (rol == "sekreter")
                     {
-                        MessageBox.Show("sekreter");
+                        Menüler fr = new Menüler();
+                        fr.Show();
+                        this.Hide();
 
                     }
                 }
@@ -131,6 +137,11 @@ namespace HastaneSistemi
                 MessageBox.Show(ex.ToString());
                 con.Close();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
