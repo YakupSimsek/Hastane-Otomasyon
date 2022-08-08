@@ -33,7 +33,7 @@ namespace HastaneSistemi
             komutkaydet.Parameters.AddWithValue("@p5", msktc.Text);
             komutkaydet.ExecuteNonQuery();
             bgl.baglantı().Close();
-            MessageBox.Show("Randevu Kaydınız Gerçekleşmiştir.", "Kayıt");
+            MessageBox.Show("Randevu Kaydınız Gerçekleşmiştir.", "Kayıt",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void Randevuoluştur_Load(object sender, EventArgs e)

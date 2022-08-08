@@ -30,9 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menüler));
             this.pnlsol = new System.Windows.Forms.Panel();
+            this.pnlrecete = new System.Windows.Forms.Panel();
+            this.btnakfrecete = new System.Windows.Forms.Button();
+            this.btnreceteolustur = new System.Windows.Forms.Button();
+            this.btnrecete = new System.Windows.Forms.Button();
             this.pnlduyuru = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnranolustur = new System.Windows.Forms.Button();
             this.btnduyuru = new System.Windows.Forms.Button();
             this.pnlmenu2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
@@ -45,9 +49,11 @@
             this.pnllogo = new System.Windows.Forms.Panel();
             this.pnlalt = new System.Windows.Forms.Panel();
             this.pnlana = new System.Windows.Forms.Panel();
+            this.btngerı = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlsol.SuspendLayout();
+            this.pnlrecete.SuspendLayout();
             this.pnlduyuru.SuspendLayout();
             this.pnlmenu2.SuspendLayout();
             this.pnlmenu1.SuspendLayout();
@@ -58,6 +64,8 @@
             // pnlsol
             // 
             this.pnlsol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
+            this.pnlsol.Controls.Add(this.pnlrecete);
+            this.pnlsol.Controls.Add(this.btnrecete);
             this.pnlsol.Controls.Add(this.pnlduyuru);
             this.pnlsol.Controls.Add(this.btnduyuru);
             this.pnlsol.Controls.Add(this.pnlmenu2);
@@ -71,11 +79,75 @@
             this.pnlsol.Size = new System.Drawing.Size(200, 632);
             this.pnlsol.TabIndex = 0;
             // 
+            // pnlrecete
+            // 
+            this.pnlrecete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(79)))), ((int)(((byte)(107)))));
+            this.pnlrecete.Controls.Add(this.btnakfrecete);
+            this.pnlrecete.Controls.Add(this.btnreceteolustur);
+            this.pnlrecete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlrecete.Location = new System.Drawing.Point(0, 415);
+            this.pnlrecete.Name = "pnlrecete";
+            this.pnlrecete.Size = new System.Drawing.Size(200, 57);
+            this.pnlrecete.TabIndex = 8;
+            // 
+            // btnakfrecete
+            // 
+            this.btnakfrecete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
+            this.btnakfrecete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnakfrecete.FlatAppearance.BorderSize = 0;
+            this.btnakfrecete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnakfrecete.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnakfrecete.ForeColor = System.Drawing.Color.White;
+            this.btnakfrecete.Location = new System.Drawing.Point(0, 30);
+            this.btnakfrecete.Name = "btnakfrecete";
+            this.btnakfrecete.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnakfrecete.Size = new System.Drawing.Size(200, 30);
+            this.btnakfrecete.TabIndex = 1;
+            this.btnakfrecete.Text = "Aktif  reçeterler";
+            this.btnakfrecete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnakfrecete.UseVisualStyleBackColor = false;
+            this.btnakfrecete.Click += new System.EventHandler(this.btnakfrecete_Click);
+            // 
+            // btnreceteolustur
+            // 
+            this.btnreceteolustur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
+            this.btnreceteolustur.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnreceteolustur.FlatAppearance.BorderSize = 0;
+            this.btnreceteolustur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreceteolustur.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnreceteolustur.ForeColor = System.Drawing.Color.White;
+            this.btnreceteolustur.Location = new System.Drawing.Point(0, 0);
+            this.btnreceteolustur.Name = "btnreceteolustur";
+            this.btnreceteolustur.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnreceteolustur.Size = new System.Drawing.Size(200, 30);
+            this.btnreceteolustur.TabIndex = 0;
+            this.btnreceteolustur.Text = "Reçete oluştur";
+            this.btnreceteolustur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnreceteolustur.UseVisualStyleBackColor = false;
+            this.btnreceteolustur.Click += new System.EventHandler(this.btnreceteolustur_Click);
+            // 
+            // btnrecete
+            // 
+            this.btnrecete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnrecete.FlatAppearance.BorderSize = 0;
+            this.btnrecete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrecete.Font = new System.Drawing.Font("Verdana", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnrecete.ForeColor = System.Drawing.Color.White;
+            this.btnrecete.Location = new System.Drawing.Point(0, 375);
+            this.btnrecete.Name = "btnrecete";
+            this.btnrecete.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnrecete.Size = new System.Drawing.Size(200, 40);
+            this.btnrecete.TabIndex = 7;
+            this.btnrecete.Text = "Reçeteler";
+            this.btnrecete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrecete.UseVisualStyleBackColor = true;
+            this.btnrecete.Click += new System.EventHandler(this.btnrecete_Click);
+            // 
             // pnlduyuru
             // 
             this.pnlduyuru.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(79)))), ((int)(((byte)(107)))));
             this.pnlduyuru.Controls.Add(this.button4);
-            this.pnlduyuru.Controls.Add(this.button5);
+            this.pnlduyuru.Controls.Add(this.btnranolustur);
             this.pnlduyuru.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlduyuru.Location = new System.Drawing.Point(0, 316);
             this.pnlduyuru.Name = "pnlduyuru";
@@ -100,23 +172,23 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnranolustur
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(200, 30);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Randevu oluştur";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnranolustur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(126)))), ((int)(((byte)(170)))));
+            this.btnranolustur.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnranolustur.FlatAppearance.BorderSize = 0;
+            this.btnranolustur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnranolustur.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnranolustur.ForeColor = System.Drawing.Color.White;
+            this.btnranolustur.Location = new System.Drawing.Point(0, 0);
+            this.btnranolustur.Name = "btnranolustur";
+            this.btnranolustur.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnranolustur.Size = new System.Drawing.Size(200, 30);
+            this.btnranolustur.TabIndex = 0;
+            this.btnranolustur.Text = "Duyuru oluştur";
+            this.btnranolustur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnranolustur.UseVisualStyleBackColor = false;
+            this.btnranolustur.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnduyuru
             // 
@@ -284,6 +356,7 @@
             // pnlana
             // 
             this.pnlana.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(56)))), ((int)(((byte)(121)))));
+            this.pnlana.Controls.Add(this.btngerı);
             this.pnlana.Controls.Add(this.pictureBox1);
             this.pnlana.Controls.Add(this.button1);
             this.pnlana.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -292,13 +365,29 @@
             this.pnlana.Size = new System.Drawing.Size(809, 532);
             this.pnlana.TabIndex = 2;
             // 
+            // btngerı
+            // 
+            this.btngerı.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btngerı.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btngerı.FlatAppearance.BorderSize = 0;
+            this.btngerı.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btngerı.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btngerı.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(227)))), ((int)(((byte)(210)))));
+            this.btngerı.Location = new System.Drawing.Point(744, 0);
+            this.btngerı.Name = "btngerı";
+            this.btngerı.Size = new System.Drawing.Size(32, 41);
+            this.btngerı.TabIndex = 2;
+            this.btngerı.Text = "<";
+            this.btngerı.UseVisualStyleBackColor = true;
+            this.btngerı.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(235, 91);
+            this.pictureBox1.Location = new System.Drawing.Point(228, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
+            this.pictureBox1.Size = new System.Drawing.Size(450, 450);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -334,6 +423,7 @@
             this.Text = "Menüler";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlsol.ResumeLayout(false);
+            this.pnlrecete.ResumeLayout(false);
             this.pnlduyuru.ResumeLayout(false);
             this.pnlmenu2.ResumeLayout(false);
             this.pnlmenu1.ResumeLayout(false);
@@ -362,6 +452,11 @@
         public System.Windows.Forms.Button btnmenu1;
         private System.Windows.Forms.Panel pnlduyuru;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button btnranolustur;
+        private System.Windows.Forms.Panel pnlrecete;
+        private System.Windows.Forms.Button btnakfrecete;
+        public System.Windows.Forms.Button btnreceteolustur;
+        private System.Windows.Forms.Button btnrecete;
+        private System.Windows.Forms.Button btngerı;
     }
 }

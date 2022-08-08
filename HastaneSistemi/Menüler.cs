@@ -22,6 +22,7 @@ namespace HastaneSistemi
             pnlmenu1.Visible = false;
             pnlmenu2.Visible = false;
             pnlduyuru.Visible = false;
+            pnlrecete.Visible = false;
             
         }
         private void HideMenu()
@@ -32,6 +33,8 @@ namespace HastaneSistemi
                 pnlmenu2.Visible = false;
             if(pnlduyuru.Visible==true)
                 pnlduyuru.Visible=false;
+            if(pnlrecete.Visible==true)
+                pnlrecete.Visible=false; 
             
         }
         private void ShowMenu(Panel subMenu)
@@ -113,6 +116,28 @@ namespace HastaneSistemi
         private void button4_Click(object sender, EventArgs e)
         {
             anapanel(new AktifRandevular()); ;
+        }
+
+        private void btnreceteolustur_Click(object sender, EventArgs e)
+        {
+            anapanel(new ReceteOlustur()) ;
+        }
+
+        private void btnrecete_Click(object sender, EventArgs e)
+        {
+            ShowMenu(pnlrecete);
+        }
+
+        private void btnakfrecete_Click(object sender, EventArgs e)
+        {
+            anapanel(new AktıfRecete());
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Login fr = new Login();
+            fr.Show();
+            this.Hide();
         }
     }
 }

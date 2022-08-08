@@ -59,6 +59,12 @@
     <Compile Include="AktifDuyurular.Designer.cs">
       <DependentUpon>AktifDuyurular.cs</DependentUpon>
     </Compile>
+    <Compile Include="AktıfRecete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AktıfRecete.Designer.cs">
+      <DependentUpon>AktıfRecete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Branşlar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,12 +103,21 @@
     <Compile Include="Randevuoluştur.Designer.cs">
       <DependentUpon>Randevuoluştur.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReceteOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceteOlustur.Designer.cs">
+      <DependentUpon>ReceteOlustur.cs</DependentUpon>
+    </Compile>
     <Compile Include="sqlbaglantısı.cs" />
     <EmbeddedResource Include="AktifDuyurular.resx">
       <DependentUpon>AktifDuyurular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AktifRandevu.resx">
       <DependentUpon>AktifRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AktıfRecete.resx">
+      <DependentUpon>AktıfRecete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Branşlar.resx">
       <DependentUpon>Branşlar.cs</DependentUpon>
@@ -130,6 +145,9 @@
     </Compile>
     <EmbeddedResource Include="Randevuoluştur.resx">
       <DependentUpon>Randevuoluştur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceteOlustur.resx">
+      <DependentUpon>ReceteOlustur.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

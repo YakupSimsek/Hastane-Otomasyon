@@ -113,6 +113,8 @@ namespace HastaneSistemi
                     if (rol == "doktor")
                     {
                         Menüler fr = new Menüler();
+                        fr.btnmenu1.Visible = false;
+                        fr.btnranolustur.Visible = false;
                         fr.Show();
                         this.Hide();
 
@@ -122,6 +124,7 @@ namespace HastaneSistemi
                     {
                         Menüler fr = new Menüler();
                         fr.Show();
+                        fr.btnreceteolustur.Visible = false;
                         this.Hide();
 
                     }
